@@ -1,0 +1,262 @@
+/* Variables */
+:root {
+    --noirCharbon: rgb(38,38,38);
+    --bleuMaree: rgb(0,105,181); 
+    --grisProfond: rgb(106,106,106); 
+    --blancPur: rgb(255,255,255); 
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font inport */
+@font-face {
+    font-family: 'Sansation';
+    src: url('../fonts/Sansation_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('../fonts/Sansation_Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+/* Styling */
+h1{
+    font-family: 'Sansation', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--bleuMaree);
+}
+
+h2{
+    font-family: 'Sansation', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--bleuMaree);
+    margin: 0 0 0.62rem 0;
+}
+
+p{
+    font-family: 'Sansation', sans-serif;
+    font-size: 1rem;
+    line-height: 1.37rem;
+    color: var(--noirCharbon);
+}
+
+a{
+    font-family: 'Sansation', sans-serif;
+    font-size: 1rem;
+    color: var(--noirCharbon);
+    text-decoration: none;
+}
+
+a span{
+    font-weight: bold;
+    color: var(--bleuMaree);
+}
+
+a:hover, a:hover svg, a:hover span{
+    color: var(--blancPur);
+    fill: var(--blancPur);
+    background-color: var(--noirCharbon);    
+}
+
+.presentation p, .project-title p{
+    font-size: 1.25rem;
+    line-height: 1.62rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1140px;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    align-self: end;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    background-color: var(--blancPur);
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 0 0 0.94rem; 
+}
+
+nav a, .project-title a {
+    padding: 0.15rem 0.31rem;
+}
+
+main.home{
+    display: flex;
+    align-items: end;
+    gap: 5rem;
+    flex-grow: 1;
+    margin: 0 0 3.75rem 0;
+}
+
+main.project{
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    gap: 3rem;
+    margin: 0 0 3.75rem 0;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    gap: 0.94rem;
+    width: 55%;
+}
+
+.project-list{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.62rem;
+}
+
+.project-list a{
+    display: flex; 
+    align-items: center;
+    padding: 0.31rem;
+}
+
+.project-title{
+    margin : 5rem 0 0 0
+}
+
+.project-title div:first-of-type{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.project-title h1{
+    margin: 0 0.62rem 0 0;
+}
+
+span.badge{
+    font-family: 'Sansation', sans-serif;
+    font-size: 0.87rem;
+    line-height: 1.37rem;
+    color: var(--blancPur);
+    background-color: var(--noirCharbon);
+    margin: 0.62rem 0.31rem 0 0;
+    padding: 0.2rem 0.62rem;
+    border-radius: 100px;
+
+}
+
+.project-problematic{
+    font-family: 'Sansation', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--bleuMaree);
+    border: solid var(--bleuMaree) 1px;
+    margin:  2rem 0;
+    padding: 0.62rem;
+}
+
+.project-content h2, .project-content p{
+    margin: 0.94rem 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border: solid 1px rgba(106,106,106, 0.2);
+}
+
+footer{
+    display: flex;
+    align-self: start;
+    align-items: end;
+    padding: 0 0 1rem 0; 
+}
+
+footer p, footer a{
+    font-size: 0.8rem;
+    color: var(--grisProfond);
+}
+
+svg, footer img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.3rem 0 0;
+    border: none;
+}
+
+/* Media queries */
+@media screen and (max-width: 1139px) {
+    body{
+        margin: 0 1.5rem; 
+    }
+}
+
+@media screen and (max-width: 613px) {
+    .project-title div:first-of-type{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    footer{
+        align-items: center;
+    }
+
+    footer img{
+        margin: 0 0.5rem 0 0
+    }
+}
+
+@media screen and (max-width: 970px) {
+    main.home{
+        flex-direction: column;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    .presentation, .project-list{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    a.project-item{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        border: solid var(--bleuMaree)
+    }
+
+    .project-item svg{
+        display: none;
+    }
+}
+
