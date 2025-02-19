@@ -69,7 +69,7 @@ a:hover, a:hover svg, a:hover span{
     background-color: var(--noirCharbon);    
 }
 
-a:hover img{
+a:hover img:hover{
     transform: scale(1.1);
     transform-origin: center;
     transition: ease-in 0.3s;
