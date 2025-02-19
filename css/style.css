@@ -76,6 +76,8 @@ a:hover, a:hover svg, a:hover span{
 }
 
 .img-preview{
+    transform: scale(1);
+    transform-origin: center;
     transition: ease-in-out 0.5s;
 }
 
