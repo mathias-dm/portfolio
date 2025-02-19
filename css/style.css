@@ -69,10 +69,10 @@ a:hover, a:hover svg, a:hover span{
     background-color: var(--noirCharbon);    
 }
 
-.img-link{
+a.img-link{
     color: none;
     fill: none;
-    background-color: none;
+    background-color: var(--blancPur);
 }
 
 a.img-link:hover img:hover{
