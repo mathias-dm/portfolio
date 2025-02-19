@@ -69,6 +69,11 @@ a:hover, a:hover svg, a:hover span{
     background-color: var(--noirCharbon);    
 }
 
+a img:hover{
+    width: 110%;
+    transition: ease-in 0.3s;
+}
+
 .presentation p, .project-title p{
     font-size: 1.25rem;
     line-height: 1.62rem;
