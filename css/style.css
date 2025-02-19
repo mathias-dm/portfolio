@@ -72,6 +72,8 @@ a:hover, a:hover svg, a:hover span{
 a img:hover{
     width: 110%;
     transition: ease-in 0.3s;
+    transform-origin: center;
+    background-color: none;
 }
 
 .presentation p, .project-title p{
