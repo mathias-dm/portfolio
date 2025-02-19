@@ -69,10 +69,13 @@ a:hover, a:hover svg, a:hover span{
     background-color: var(--noirCharbon);    
 }
 
-
 .img-preview:hover{
     transform: scale(1.5);
     transform-origin: center;
+    transition: ease-in-out 0.5s;
+}
+
+.img-preview{
     transition: ease-in-out 0.5s;
 }
 
