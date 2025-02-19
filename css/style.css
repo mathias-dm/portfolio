@@ -76,9 +76,9 @@ a.img-link:hover{
 }
 
 a.img-link:hover img:hover{
-    transform: scale(1.1);
+    transform: scale(1.5);
     transform-origin: center;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.2s;
 }
 
 .presentation p, .project-title p{
