@@ -73,7 +73,7 @@ a:hover img:hover{
     transform: scale(1.1);
     transform-origin: center;
     transition: ease-in 0.3s;
-    background-color: none;
+    background-color: var(--blancPur);
 }
 
 .presentation p, .project-title p{
